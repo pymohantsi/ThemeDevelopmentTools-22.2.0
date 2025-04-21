@@ -325,6 +325,7 @@
 }
 
 .header-nav-desktop-wrapper{
+	width: 100%;
 	margin: 0 auto;
 	@media (min-width: $screen-md) and (max-width: 1420px){
 		margin: 0 auto 0 0;

@@ -27,7 +27,8 @@
         margin-bottom: $sc-margin-lv4;
       }
       .bx-viewport {
-        height: auto !important;
+        height: 510px !important;
+        border-radius: 0 20px 20px 20px;
       }
       .home-slide-main-container .home-slide-image-container {
         overflow: hidden;
@@ -42,6 +43,9 @@
         }
 
         //slider image
+        .home-slide-wrap-link{
+          width: 100%;
+        }
         img {
           margin: auto 0;
           height: 100%;
@@ -155,6 +159,10 @@
         .bx-pager-item {
             vertical-align: middle;
         }
+        .bx-pager-item{border:1px solid transparent; padding:8px 0;border-radius: 100%;}
+        .bx-pager-item:has(.bx-pager-link.active) {
+          border-color: #FFF;
+        }
       }
     }
 
@@ -206,8 +214,8 @@
   .bx-pager-link {
       color: $sc-home-carousel-icons-color-mobile !important;
       background-color: $sc-home-carousel-icons-color-mobile !important;
-      width: 10px !important;
-      height: 10px !important;
+      width: 18px !important;
+      height: 18px !important;
       border-radius: 100% !important;
       font-size:0;
       text-indent:-9999px;

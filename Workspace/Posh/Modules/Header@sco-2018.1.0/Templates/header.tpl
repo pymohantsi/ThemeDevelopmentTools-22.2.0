@@ -75,14 +75,14 @@
 
 <div class="header-logo-nav-container">
     <div class="header-logo-nav-wrapper">
-        <div class="header-logo-desktop-wrapper">
+        <!--<div class="header-logo-desktop-wrapper">
             <div data-view="Header.Logo"></div>
-        </div>
+        </div>-->
         <div class="header-nav-desktop-wrapper">
             {{!-- Navigation --}}
             <div class="header-secondary-wrapper" data-view="Header.Menu" data-phone-template="header_sidebar" data-tablet-template="header_sidebar"></div>
         </div>
-        <div class="header-right-menu-also">
+        <!--<div class="header-right-menu-also">
             {{#if extraHeaderView.socialMediaLinks}}
             <div class="header-menu-social">
                 <ul class="header-menu-social-list">
@@ -97,7 +97,7 @@
             </div>
             {{/if}}
 
-			<!--
+			
             <div class="header-menu-search">
                 <button class="header-menu-search-link" data-action="show-sitesearch" title="{{translate 'Search'}}">
                     <i class="header-menu-search-icon">
@@ -105,14 +105,13 @@
 					</i>
                 </button>
             </div>
-			-->
 			
             <div class="header-menu-cart">
                 <div class="header-menu-cart-dropdown" >
                     <div data-view="Header.MiniCart"></div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
 </div>
 

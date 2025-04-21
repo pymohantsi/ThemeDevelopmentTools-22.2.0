@@ -47,7 +47,7 @@ $sc-site-max-width: 1440px; /* editable({"type": "string", "label": "Max width",
 
 // Stops having to repeat the same css for shopping-layout-header, checkout-layout-header, myaccount-layout-header
 @mixin common-header {
-    @include box-shadow(0 6px 12px transparentize($sc-theme-color-overlay, 1-0.05));
+    // @include box-shadow(0 6px 12px transparentize($sc-theme-color-overlay, 1-0.05));
     margin-bottom: $sc-margin-lv4;
 
     @media (min-width: $screen-sm-min){
