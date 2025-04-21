@@ -7,20 +7,10 @@
 .footer-content-wrapper {
     @extend .container;
     @include site-max-width-container;
-    padding: 40px;
+    padding: 40px 20px;
     color: $sc-footer-text-color;
-
     display: flex;
     flex-direction: column;
-
-    @media (min-width: $screen-sm-min) {
-        padding: 40px 100px;
-    }
-
-    @media (min-width: $screen-md-min) {
-        padding: 40px 0;
-        flex-direction: row;
-    }
 }
 
 .footer-content {
@@ -29,7 +19,11 @@
 
 .footer-content-nav {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1.75fr 1fr;
+    @media (max-width: $screen-xs) {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
     ul{
         display: grid;
         grid-auto-flow: column;
@@ -38,15 +32,27 @@
         padding: 0;
         margin: 0;
         gap: 10px 32px;
+        @media (max-width: $screen-sm) {
+            grid-auto-flow: row;
+            grid-template-rows: none;
+        }
     }
     .footer-content-nav-list-1{
         justify-self: start;
     }
     .footer-content-nav-list-2{
-        justify-self: start;
+        justify-self: center;
+        @media (max-width: $screen-xs) {
+            order: 3;
+            grid-column: 1 / -1;
+            justify-self: start;
+        }
     }
     .footer-content-nav-list-3{
         justify-self: end;
+        @media (max-width: $screen-xs) {
+            justify-self: start;
+        }
     }
 }
 
@@ -63,6 +69,9 @@
     font-weight: 600;
     margin: 0;
     text-transform: capitalize;
+    @media (max-width: $screen-md) {
+        font-size: 20px;
+    }
 }
 
 .footer-column-link {
@@ -160,7 +169,11 @@
     flex-wrap: wrap;
     font-size: $sc-font-size-s;
     font-weight: $sc-font-weight-light;
-    padding: 45px 0 35px 0;
+    padding: 45px 20px 35px 20px;
+    @media (max-width: $screen-xs) {
+        gap: 30px;
+        padding: 20px;
+    }
 
     .footer-cy-social{
         justify-self: start;
@@ -169,6 +182,10 @@
         gap: 75px;
         font-size: 0.875rem;
         font-weight: 500;
+        flex-wrap: wrap;
+        @media (max-width: $screen-xs) {
+            gap: 30px;
+        }
     }
     .footer-payment-card{
         justify-self: end;
