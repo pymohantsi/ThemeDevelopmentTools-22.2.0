@@ -1,4 +1,3 @@
-npm -v v14.21.3
-step 1: npm install
-step 2: npm install --global gulp
-step 3: gulp theme:local
+npm -v v14.21.3 \n
+step 1: npm install \n
+step 2: npx gulp theme:local \n
