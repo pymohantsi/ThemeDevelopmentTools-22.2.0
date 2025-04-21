@@ -1,0 +1,17 @@
+{
+    "credentials": {
+        "user_agent": "sc-theme-devtools/2022.2.0",
+        "authID": "aselvam@convergencetec.com",
+        "account": "433345-SB1",
+        "hostname": "433345-SB1.restlets.api.netsuite.com",
+        "website": "2",
+        "domain": "beta.cticonnect.com",
+        "webapp_id": "3019666",
+        "ssp_folder": "3019666",
+        "is_scis": false,
+        "target_folder": {
+            "parentId": "-15",
+            "folderName": "Deploy_Extensions"
+        }
+    }
+}
