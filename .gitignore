@@ -4,7 +4,7 @@ Workspace-bk-05-03-2025/
 Workspace-bk-15-04-2025/
 DeployDistribution/
 tmp/
+package-lock.json
 .nsdeploy
 payload.json
-config.json
 mainfest.json
