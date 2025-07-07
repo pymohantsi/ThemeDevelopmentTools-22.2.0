@@ -2,7 +2,7 @@
 	"name": "CoreContent",
 	"fantasyName": "Core Content Extension",
 	"vendor": "CXExtensibility",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"type": "extension",
 	"target": "SCA,SCS",
 	"target_version": {
@@ -97,7 +97,7 @@
 		]
 	},
 	"local_folder": "Workspace/CoreContent",
-	"path": "SuiteScripts/extensions/CXExtensibility/CoreContent@1.0.6",
+	"path": "SuiteScripts/extensions/CXExtensibility/CoreContent@1.0.7",
 	"activation_id": "6",
-	"extension_id": "11501"
+	"extension_id": "13502"
 }

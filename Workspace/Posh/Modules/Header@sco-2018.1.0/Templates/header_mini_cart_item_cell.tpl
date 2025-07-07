@@ -25,6 +25,11 @@
 									{{comparePriceFormatted}}
 								</small>
 							{{/if}}
+							{{#if tariff}}
+							<div class="tariff-container">
+								+ {{tariff}} Tariff
+							</div>
+							{{/if}}
 						</li>
 		    	{{/if}}
 		    {{else}}

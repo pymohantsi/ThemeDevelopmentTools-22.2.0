@@ -26,7 +26,7 @@
 					{{else}}
 						{{translate 'Subtotal <span class="order-wizard-cart-summary-item-quantity-subtotal" data-type="cart-summary-subtotal-count">($(0) item)</span>' itemCount}}
 					{{/if}}
-					<p class="order-wizard-cart-summary-subtotal-legend">{{translate 'Subtotal does not include shipping or tax'}}</p>
+					<p class="order-wizard-cart-summary-subtotal-legend">{{translate 'Tariffs Included In Subtotal; Shipping and Tax Excluded.'}}</p>
 				</span>
 			</p>
 		</div>

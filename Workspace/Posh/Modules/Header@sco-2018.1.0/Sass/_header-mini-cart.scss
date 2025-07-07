@@ -147,3 +147,51 @@ a.header-mini-cart-buttons {
 
 .header-mini-cart-summary-cart-ellipsis{}
 
+
+
+// Added logic for new template
+
+.header-mini-cart-menu-cart-link {
+	position: relative;
+    padding: 5px;
+}
+.header-mini-cart-menu-cart-legend{
+	position: absolute;
+    top: 0px;
+    background: black;
+    border-radius: 50%;
+    color: white;
+    width: auto;
+    height: auto;
+    left: 25px;
+	font-family: $sc-font-family;
+}
+.header-minicart-new{
+	display: flex;
+	// flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 5px;
+}
+.header-minicart-text-content-heading{
+	font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+	font-family: $sc-font-family;
+	margin-left: $sc-margin-lv3;
+	text-align: left;
+}
+.header-profile-menu-login-details{
+	display: none;
+}
+.open .header-profile-menu-login-details{
+	display: block;
+}
+.header-minicart-text-content-heading{
+	@media screen and (max-width: $screen-md-max) {
+		display: none;
+		
+	}
+}
+

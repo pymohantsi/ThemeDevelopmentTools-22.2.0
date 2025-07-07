@@ -12,6 +12,11 @@
 						{{comparePriceFormatted}}
 					</small>
 				{{/if}}
+				{{#if tariff}}
+				<div class="tariff-container">
+					+ {{tariff}} Tariff
+				</div>
+				{{/if}}
 				<link itemprop="availability" href="{{#if isPurchasable}}{{#if isInStock}}https://schema.org/InStock{{else}}{{#if backOrderPreOrder}}https://schema.org/PreOrder{{else}}https://schema.org/InStock{{/if}}{{/if}}{{else}}https://schema.org/OutOfStock{{/if}}"/>
 			</span>
 
@@ -26,6 +31,11 @@
 					<small class="product-views-price-old">
 						{{comparePriceFormatted}}
 					</small>
+				{{/if}}
+				{{#if tariff}}
+				<div class="tariff-container">
+					+ {{tariff}} Tariff
+				</div>
 				{{/if}}
 				<link itemprop="availability" href="{{#if isPurchasable}}{{#if isInStock}}https://schema.org/InStock{{else}}{{#if backOrderPreOrder}}https://schema.org/PreOrder{{else}}https://schema.org/InStock{{/if}}{{/if}}{{else}}https://schema.org/OutOfStock{{/if}}"/>
 			</span>

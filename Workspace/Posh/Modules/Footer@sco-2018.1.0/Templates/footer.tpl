@@ -11,6 +11,14 @@
 <section class="footer-wrapper">
 	<div class="footer-content-wrapper">
 		<div id="footer-logo-card" class="footer-logo" data-cms-area="footer_logo_part" data-cms-area-filters="global"></div>
+		
+		<div class="footer-content-newsletter">
+      {{#if extraFooterView.showLegacyNewsletter}}
+        <div data-view="FooterContent"></div>
+      {{else}}
+        <div class="newsletter-cct-area" data-cms-area="newsletter-cct-area" data-cms-area-filters="global"></div>
+      {{/if}}
+		</div>
 		<div class="footer-content">
 			<div class="footer-content-nav">
 				{{#if extraFooterView.col1Links}}

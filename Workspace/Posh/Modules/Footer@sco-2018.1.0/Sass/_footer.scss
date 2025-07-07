@@ -58,7 +58,27 @@
 
 
 .footer-column-heading-listitem{
+
     margin-bottom: 22px;
+    
+    .footer-column-heading{
+
+        @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
+           font-size: 20px;
+            
+        }
+        @media  screen and (min-width:$screen-md-max) {
+            font-size: 26px;
+        }
+        @media (min-width:$screen-sm-min) and (max-width: $screen-sm-max) {
+            font-size: 18px;
+        }
+        @media screen and (max-width: $screen-sm-min) {
+            font-size:17px;
+        }
+
+    }
+    
 }
 
 .footer-column-heading {
@@ -81,6 +101,24 @@
     &:focus {
         color: $sc-footer-headings-color;
     }
+    @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
+        font-size: 14px;
+        font-weight: normal;
+         
+     }
+     @media  screen and (min-width:$screen-md-max) {
+         font-size: 16px;
+         font-weight: normal;
+     }
+     @media (min-width:$screen-sm-min) and (max-width: $screen-sm-max) {
+         font-size: 12px;
+         font-weight: normal;
+     }
+     @media screen and (max-width: $screen-sm-min) {
+         font-size:12px;
+         font-weight: normal;
+     }
+
 }
 
 .footer-content-newsletter {
@@ -265,3 +303,208 @@
 .footer-banner-wrapper {
     display: none;
 }
+
+
+// add news letter subscription form 
+
+.footer-logo{
+    .newsletter-heading{
+        @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
+            font-size: 20px;
+             
+         }
+         @media  screen and (min-width:$screen-md-max) {
+             font-size: 34px;
+         }
+         @media (min-width:$screen-sm-min) and (max-width: $screen-sm-max) {
+             font-size: 18px;
+         }
+         @media screen and (max-width: $screen-sm-min) {
+             font-size:17px;
+         }
+    }
+    .newsletter-subtext{
+        font-size: 20px;
+        @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
+            font-size: 17px;
+            margin: 12px 0 12px 0;
+             
+         }
+         @media  screen and (min-width:$screen-md-max) {
+             font-size: 20px;
+         }
+         @media (min-width:$screen-sm-min) and (max-width: $screen-sm-max) {
+             font-size: 15px;
+             margin: 12px 0 12px 0;
+         }
+         @media screen and (max-width: $screen-sm-min) {
+             font-size:14px;
+             margin: 12px 0 12px 0;
+
+         }
+    }
+    .newslettercct-form{
+        @media screen and (max-width: $screen-md-max) {
+          padding-top: 0;
+        }
+    }
+    .newslettercct-header{
+        display: none;
+    }
+    .newslettercct-background{
+        background-color: #00548A;
+    }
+    .newslettercct-container{
+        width: 61%;
+        @media screen and (max-width:$screen-sm-min){
+            width: 95%;
+        }
+        
+    }
+    .newslettercct-horizontal .newslettercct-input-group{
+        @media (min-width: 768px) {
+            width: 50% ;
+        display: inline-block;
+        padding-right: 0;
+        vertical-align: top;
+        }
+        @media screen and (max-width: 768px) {
+            width: 70%;
+            float: inline-start;
+            display: block;
+            padding-right: 0;
+            vertical-align: top;
+            
+        }
+
+    }
+    
+    .newslettercct-input-group{
+        @media screen and (max-width: 768px) {
+            width: 70% !important;
+            float: inline-start;
+            display: block;
+            padding-right: 0;
+            vertical-align: top;
+            
+        }
+    }
+    .newslettercct-form{
+        .newslettercct-button-container{
+            font-size: 14px;
+            @media screen and (max-width: 768px) {
+                display: block;
+                float: inline-end;
+                width: 30% !important;
+                
+            }
+        }
+    }
+
+    .fields-group-form-control{
+        // width: 580px;
+    }
+    .newslettercct-input{
+        height: 50px;
+        border-radius: 50px;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        padding-left: 32px;
+        color: $sc-color-7;
+        font-family: $sc-font-family;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        border-color: #ffffff;
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+            
+        }
+
+    }
+    .newslettercct-button-container{
+        .newslettercct-submit{
+
+            height: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius:50px;
+            font-size: 14px;
+            font-family: $sc-font-family;
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            color: #FFFFFF; 
+            background-color: $sc-color-sky-blue;
+            border-color: $sc-color-sky-blue;
+            text-transform: capitalize;
+            @media screen and (max-width: 768px) {
+                font-size: 11px;
+
+                
+            }
+        }
+    }
+    .newslettercct-subheader{
+        display: none;
+    }
+    .newsletter-container{
+        img{
+            @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
+                max-width: 180px;
+                 
+             }
+             @media (min-width:$screen-sm-min) and (max-width: $screen-sm-max) {
+                max-width: 170px;
+            }
+            @media screen and (max-width: $screen-sm-min) {
+                max-width: 160px;
+                
+            }
+        }
+    }
+}
+
+
+.footer-logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+  .footer-logo-container *{
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: bold;
+  }
+  .newsletter-section {
+    text-align: center;
+    color: white;
+  }
+  .newsletter-heading {
+    font-size: 2.125rem;
+    margin-bottom: 0px;
+  }
+  .newsletter-subtext{
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    margin: 12px 0 35px 0;
+  }
+  @media (max-width: 768px) {
+    .newsletter-heading{
+      font-size: 1.5rem;
+    }
+    .newsletter-subtext{
+      font-size: 1rem;
+    }
+    .footer-logo-container img{
+      max-width: 180px;
+      width: 100%;
+    }
+  }
+  @media (max-width: 540px) {
+    .footer-logo-container{
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  }

@@ -85,7 +85,12 @@
 }
 
 .header-profile-menu-login-container{
+	margin-right: $sc-margin-lv3;
 	//margin-right: $sc-margin-base;
+	@media screen and (max-width: $screen-sm-min) {
+		margin-right: $sc-margin-lv2;
+		
+	}
 }
 
 .header-profile-menu-login li{
@@ -162,3 +167,58 @@
 .header-profile-loading-icon{}
 .header-profile-loading-indicator{}
 
+.header-profile-menu-login-container{
+	position: relative;
+}
+.header-profile-menu-myaccount-container-new{
+	display: none;
+    position: absolute;
+    left: 0;
+    background: #FFFFFF;
+    // width: 100%;
+    top: 100%;
+	z-index: 1002;
+    text-align: left;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    transition: opacity 0.1s ease-out, left 0.1s ease-in-out;
+	
+	li > a {
+		font-family: $sc-font-family;
+		
+		color: $sc-color-secondary;
+		padding: 8px 20px;
+		height: 40px;
+		line-height: 25px;
+		text-align: left;
+		text-transform: capitalize;
+		font-weight: 400;
+		font-size: $sc-font-size-s !important;
+		font-style: normal;
+		min-width: 150px;
+		&:hover {
+			background: $sc-color-green-light;
+			color: $sc-color-secondary;
+		}
+		&:active, &:focus {
+			background: $sc-color-green-light;
+			color: $sc-color-secondary;
+		}
+		
+	}
+	&:before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 1px;
+		background: whitesmoke;
+		opacity: 0.1;
+		margin-bottom: 10px;
+	}
+}
+.open .header-profile-menu-myaccount-container-new{
+	display: block;
+	// opacity: 1;
+	// visibility: visible;
+	height: auto;
+}

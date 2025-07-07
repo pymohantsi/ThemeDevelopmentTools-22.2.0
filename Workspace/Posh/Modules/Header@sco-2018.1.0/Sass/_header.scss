@@ -6,6 +6,16 @@
 .header-message-section{
 	background-color: #E8F7FF;
 	padding: 12px 15px;
+	.header-top-center-contact-info{
+		.contact-item-container{
+			.item-text{
+				a{
+					font-size: 12px;
+					
+				}
+			}
+		}
+	}
 	.header-message-section-container{
 		@include site-max-width-container;
 		display: grid;
@@ -53,8 +63,17 @@
 .header-section{
 	padding: 33px 20px;
 	.header-wrapper{
-		display: grid;
+		
+		@media screen and (max-width: $screen-lg-min) {
+			display: flex;
+			justify-content: space-between;
+			
+		}
+		@media screen and (min-width: $screen-lg-min) {
+			display: grid;
 		grid-template-columns: 1fr auto 1fr;
+			
+		}
 		align-items: center;
 		.header-logo-wrapper{
 			justify-self: left;
@@ -122,6 +141,7 @@
 				font-size: 16px;
 			}
 		}
+		
 		.header-login-wrapper{
 			justify-self: right;
 		}
@@ -454,11 +474,16 @@
 	padding: 0 $sc-padding-lv1;
 	float:right;
 	display: none;
+	font-family: "Poppins", sans-serif;
 
 	@media(min-width: $screen-md-min) {
 		display: inline;
-		line-height: 25px;
+		line-height: 18px;
 	}
+	// @media(min-width: $screen-md-min) {
+	// 	display: inline;
+	// 	line-height: 25px;
+	// }
 }
 
 .svg-shopping-bag,
@@ -682,6 +707,9 @@
 	@media (min-width: $screen-lg-min) {
 		padding: 0;
     }
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+		padding: 0 ;
+	}
 }
 
 .header-logo-desktop-wrapper {
@@ -696,4 +724,57 @@
 .header-banner-top,
 .header-banner-bottom {
 	@extend .row;
+}
+
+
+
+// Added The New Code
+
+.header-side-content-wrapper-new{
+	display: flex;
+	justify-content:flex-end ;
+	align-items: center;
+}
+
+
+.header-wrapper{
+	margin-bottom: calc($sc-margin-lv2 * 3) ;
+}
+.header-section{
+	padding: 33px 20px 0 20px;
+}
+.header-search-mobile-view{
+	display: none;
+	@media (max-width: $screen-md-min) {
+		display: block;
+	}
+	.site-search-content-Categories-list-item{
+		width: 155px !important;
+	}
+	margin-bottom: calc($sc-margin-lv3 * 2);
+}
+.header-search-desktop-view{
+	display: none;
+	@media (min-width: $screen-md-min) {
+		display: block;
+	}
+}
+.header-profile-wrapper,.header-wishlist-wrapper{
+	display: none;
+	margin-right: 20px;
+	@media (min-width: $screen-sm-min) {
+		display: block;
+	}
+	@media (max-width: $screen-sm-min) {
+		margin-right: $sc-margin-lv2;
+	}
+}
+.header-logo-nav-wrapper .header-menu-secondary-nav .header-menu-level1-anchor{
+	@media (min-width:$screen-md-min) and (max-width: $screen-md-max){
+		font-size: 11px !important;
+		
+	}
+}
+.header-custom-class{
+	border-bottom: 2px solid #D9D9D9;
 }

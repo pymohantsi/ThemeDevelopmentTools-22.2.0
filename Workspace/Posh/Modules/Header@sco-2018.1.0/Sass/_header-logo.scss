@@ -20,6 +20,13 @@
         width: auto;
         max-width: $sc-desktop-header-logo-width; // for IE, see #106
     }
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        max-width: 170px;
+    }
+    @media screen and (max-width: $screen-sm-min) {
+        max-width: 135px;
+        
+    }
     
 }
 .header-logo {

@@ -11,7 +11,8 @@
 
 .cart-add-to-cart-button {
 	position: static;
-	margin-bottom: $sc-margin-lv3 * 2;
+	// margin-bottom: $sc-margin-lv3 * 2;
+	margin-bottom: 0;
 
 	@media (min-width: $screen-md-min) {
 		margin-bottom: 0;

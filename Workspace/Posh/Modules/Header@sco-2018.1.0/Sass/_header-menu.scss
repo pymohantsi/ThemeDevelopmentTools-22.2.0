@@ -21,6 +21,12 @@
     @media (min-width: $screen-lg-min) {
         margin: 0 0 0 $sc-main-navigation-link-margin;
     }
+    @media(min-width: 1500px) {
+       
+            margin-right: 0 !important;
+        
+    }
+    
 }
 
 ///////////////////////////////////////////////////////////////
@@ -46,8 +52,14 @@
 .header-menu-mobile-cart {
     display: inline-block;
     margin-left: 10px;
+    margin-right: 20px;
     @media (min-width: $screen-md-min) {
         display: none;
+    }
+    @media screen and (max-width: $screen-sm-min) {
+        // margin-left: 0;
+        margin-right: 10px;
+        
     }
 }
 
@@ -61,11 +73,13 @@
 }
 
 .header-menu-search-link {
-    font-size: 20px;
+    font-size: 24px;
     background: none;
     cursor: pointer;
     position: relative;
-    color: $sc-header-icon-color;
+    color: $sc-color-secondary;
+    font-weight: lighter !important;
+    top: -3px;
     @media (min-width: $screen-md-min) {
         line-height: $sc-header-height;
         border: none;
@@ -80,7 +94,7 @@
     outline: none;
 }
 .header-menu-search-link.active {
-    color: $sc-header-icon-hover-color;
+    color: $sc-color-secondary;
 }
 
 ///////////////////////////////////////////////////////////////
@@ -90,8 +104,13 @@
     display: none;
 
     @media (min-width: $screen-md-min) {
-        display: block;
+        // display: block;
         min-height: $sc-main-navigation-height;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
     }
     .header-main-cat{
         background-color: #0093D1;
@@ -109,12 +128,20 @@
             gap: 15px;
             margin-top: 3px;
         }
+
+        @media (max-width:1254px) {
+            max-width: 213px;
+            // max-width: 230px;
+        }
+
     }
 }
 
 .header-menu-level1 > li {
     display: inline-block;
     position: relative;
+
+
 }
 
 .header-menu-level1-anchor {
@@ -125,17 +152,19 @@
     //padding: 0 $sc-padding-lv2;
     margin-right: $sc-main-navigation-link-margin-right - 10px;
     margin-left: $sc-main-navigation-link-margin-left - 10px;
-    color: $sc-main-navigation-link-color;
+    color: $sc-color-5;
     font-weight: $sc-font-weight-bold;
     text-transform: $sc-main-navigation-link-text-transform;
     letter-spacing: $sc-main-navigation-link-letter-spacing;
 
     &:hover, &:focus{
-		color: $sc-main-navigation-link-hover-color;
+		// color: $sc-main-navigation-link-hover-color;
+		color: #2d78b1;
     }
 
     &:active {
-        color: $sc-main-navigation-link-active-color;
+        // color: $sc-main-navigation-link-active-color;
+        color: desaturate(darken($sc-color-5, 17), 38);
     }
     @media (min-width: $screen-lg-min) {
         margin-right: $sc-main-navigation-link-margin-right;
@@ -144,7 +173,8 @@
 }
 
 .open .header-menu-level1-anchor{
-    color: $sc-main-navigation-link-hover-color;
+    // color: $sc-main-navigation-link-hover-color;
+    color: #2d78b1;
 }
 
 .header-menu-home-anchor,
@@ -160,17 +190,18 @@
 .header-menu-level2-anchor {
     text-transform: $sc-main-navigation-submenu-heading-text-transform;
     font-weight: $sc-font-weight-normal;
-    color: $sc-main-navigation-submenu-heading-color;
+    color: $sc-main-navigation-submenu-heading-color; 
     padding: $sc-main-navigation-submenu-v-padding $sc-main-navigation-submenu-h-padding;
     display: block;
     text-align: left;
     height: auto;
     min-width: $sc-main-navigation-submenu-heading-width;
     background-color: $sc-header-background-color;
+    // background-color: $sc-header-background-color;
 
     &:hover {
         color: $sc-main-navigation-submenu-heading-hover-color;
-        background-color: $sc-main-navigation-submenu-heading-bgr-hover-color;
+        background-color: $sc-main-navigation-submenu-heading-bgr-hover-color !important;
     }
 }
 
@@ -292,3 +323,33 @@
 
 }
 
+
+.header-menu-secondary-nav{
+    margin-left: 0 !important;
+}
+
+
+.header-menu-level1 > li{
+    :last-child{
+        margin-right: 0;
+    }
+}
+.btn-phone-icon{
+    background: #000000;
+    padding: $sc-padding-lv2 calc($sc-padding-lv2 * 3);
+    // line-height: 35px;
+    line-height: 22px;
+    height: 42px;
+    border-radius: 50px;
+    color: white;
+    &:hover,&:active,&:focus{
+        background: #242323;
+        color: rgb(245, 240, 240);
+    }
+}
+@media (min-width: 1200px){
+    .header-menu-level1-anchor, .header-menu-home-anchor, .header-menu-shop-anchor{
+        margin-right: 0px!important;
+    }
+    
+}

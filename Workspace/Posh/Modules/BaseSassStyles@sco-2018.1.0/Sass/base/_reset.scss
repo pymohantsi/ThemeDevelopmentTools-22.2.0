@@ -39,7 +39,8 @@ img {
 }
 
 a {
-	color: $sc-color-link;
+	color: $sc-color-5;
+	// color: $sc-color-link;
 	text-decoration: none;
 	cursor:pointer;
 	cursor:hand;
@@ -47,12 +48,12 @@ a {
 }
 
 a:hover, a:focus {
-	color: $sc-color-link-hover;
+	color: #2d78b1;
 	text-decoration: none;
 }
 
 a:active {
-	color: $sc-color-link-active;
+	color: #2d78b1;
 }
 
 [data-toggle="dropdown"]:hover, [data-toggle="dropdown"]:focus{

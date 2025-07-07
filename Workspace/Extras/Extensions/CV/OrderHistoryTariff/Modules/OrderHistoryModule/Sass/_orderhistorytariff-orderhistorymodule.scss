@@ -7,12 +7,17 @@
 	@import "../../<other module>/Sass/other-sass-file.scss";
 */ 
 
-.customccmodule-info-card {
+.orderhistorymodule-info-card {
     @extend .info-card;
 }
 
-.customccmodule-info-card-content {
+.orderhistorymodule-info-card-content {
     @extend .info-card-content;
     color: $sc-color-secondary;
     font-weight: bold;
+}
+.order-history-packages-items-table {
+    .tariff-container {
+        display: none;
+    }
 }

@@ -11,6 +11,11 @@
 		{{/if}}
 		<link itemprop="availability" href="{{#if isInStock}}https://schema.org/InStock{{else}}https://schema.org/OutOfStock{{/if}}"/>
 	</span>
+	{{#if tariff}}
+	<div class="tariff-container">
+		+ {{tariff}} Tariff
+	</div>
+	{{/if}}
 </div>
 {{else}}
 	<div class="transaction-line-views-price-login-to-see-prices">

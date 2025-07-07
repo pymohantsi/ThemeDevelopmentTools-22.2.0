@@ -1,5 +1,5 @@
 <div id="layout" class="checkout-layout">
-	<header id="site-header" class="checkout-layout-header" data-view="Header"></header>
+	<header id="site-header" class="checkout-layout-header header-custom-class" data-view="Header"></header>
 	<div id="main-container">
 		<div class="checkout-layout-breadcrumb" data-view="Global.Breadcrumb" data-type="breadcrumb"></div>
 		<div class="checkout-layout-notifications">

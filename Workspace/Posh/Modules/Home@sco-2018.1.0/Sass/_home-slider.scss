@@ -148,7 +148,12 @@
     .bx-controls {
       .bx-pager {
         padding-top: 15px;
-
+        text-align: center;
+        
+        @media screen and (min-width:1500px) {
+          margin-left: 60px;
+          text-align: left;
+        }
         @media (min-width: $screen-md-min) {
             padding-top: 0;
             position: absolute;
@@ -182,14 +187,25 @@
       display: $sc-home-carousel-icons-display;
       position: absolute;
       top: 50%;
+      // width: 60px;
+      // height: 60px;
       width: $sc-target-size-mobile;
       height: $sc-target-size-mobile;
+      // font-size: 40px;
       font-size: 30px;
       text-align: center;
-      color: $sc-home-carousel-icons-color-desktop;
+      // color: $sc-home-carousel-icons-color-desktop;
+      color: $sc-color-12;
+      border: 2px solid $sc-color-12;
       margin-top: -20px;
-      line-height: 40px;
+      // line-height: 55px;
+      line-height: 35px;
       z-index: 10;
+      background: white;
+      border-radius: 50%;
+      @media screen and (min-width:1500px) {
+        
+      }
       @media (max-width: $screen-sm-min) {
           display: $sc-home-carousel-icons-display;
           color: $sc-home-carousel-icons-color-mobile;
@@ -200,13 +216,22 @@
   }
 
   .home-gallery-prev-icon {
+      // left: -25px;
+      
       left: 10px;
       @extend .icon-angle-left;
+      @media screen and (min-width:1500px) {
+        left: -14px;
+      }
   }
 
   .home-gallery-next-icon {
+      // right: -25px;
       right: 10px;
       @extend .icon-angle-right;
+      @media screen and (min-width:1500px) {
+        right: -14px;
+      }
   }
 
   // Pager specifics --------
@@ -323,9 +348,10 @@
       }
 
       .home-info-title {
-          margin-bottom: $sc-margin-lv2;
+          margin-bottom: calc($sc-margin-lv2 * 2);
           font-size: $sc-home-cta-title-size-mobile;
           color: $sc-home-cta-title-color;
+          font-family: $sc-font-family;
 
           @media (min-width: $screen-sm-min){
               font-size: $sc-home-cta-title-size;
@@ -347,7 +373,11 @@
         //font-size: $sc-home-cta-title-size-mobile;
         //font-weight: $sc-font-weight-light;
         color: $sc-home-cta-text-color;
-
+        font-family: $sc-font-family;
+        margin-bottom: 30px;
+        line-height: 35px;
+        letter-spacing: 0;
+        word-spacing: 1px;
         @media (min-width: $screen-sm-min){
             display:block;
             //font-size: $sc-font-size-xxxl;
@@ -368,6 +398,7 @@
           padding-left: $sc-padding-lv4;
           padding-right: $sc-padding-lv4;
           width: 100%;
+          font-family: $sc-font-family;
 
           @media (min-width: $screen-sm-min) {
               padding:0;
@@ -385,9 +416,14 @@
               //border: 1px solid $sc-home-carousel-button-border-color;
               //color: $sc-home-carousel-button-text-color;
               width: auto;
-              padding: 13px $sc-padding-lv4;
+              padding: $sc-padding-lv3 $sc-padding-lv6;
+              // padding: 13px $sc-padding-lv4;
               pointer-events: all;
-
+              background: #81C240;
+              border-radius: 40px;
+              text-transform: capitalize;
+              font-size: 16px;
+              letter-spacing: 0;
               &:hover {
                   //background-color: $sc-home-carousel-button-background-color-hover;
                   //border: 1px solid $sc-home-carousel-button-border-color-hover;

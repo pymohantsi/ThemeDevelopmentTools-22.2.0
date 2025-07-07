@@ -11,7 +11,7 @@ $sc-home-cta-text-color: $sc-color-copy; /* editable({"type": "color", "label": 
 $sc-home-promo-background-color: whitesmoke; /* editable({"type": "color", "label": "Promo background color"}) */
 
 /* Carousel Icons */
-$sc-home-carousel-icons-display: none; /* editable({
+$sc-home-carousel-icons-display: block; /* editable({
 	"type": "string",
 	"label": "Display Carousel Icons",
 	"options": [

@@ -4,7 +4,7 @@
 	"vendor": "SuiteCommerce",
 	"type": "extension",
 	"target": "SCA,SCS",
-	"version": "1.2.8",
+	"version": "1.2.9",
 	"description": "The SuiteCommerce Inventory Display extension allows customers to show inventory status and quantity on the item's Product Detail Page.",
 	"assets": {
 		"img": {
@@ -80,7 +80,7 @@
 			"Modules/ItemBehavior/SuiteScript/ItemBehavior.ServiceController.js"
 		]
 	},
-	"path": "SuiteScripts/extensions/SuiteCommerce/InventoryDisplay@1.2.8",
+	"path": "SuiteScripts/extensions/SuiteCommerce/InventoryDisplay@1.2.9",
 	"activation_id": "6",
-	"extension_id": "13301"
+	"extension_id": "13501"
 }

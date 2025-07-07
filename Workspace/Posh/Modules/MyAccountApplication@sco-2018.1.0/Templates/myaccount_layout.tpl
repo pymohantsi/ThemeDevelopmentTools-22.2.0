@@ -1,5 +1,5 @@
 <div id="layout" class="myaccount-layout">
-	<header id="site-header" class="myaccount-layout-header" data-view="Header"></header>
+	<header id="site-header" class="myaccount-layout-header header-custom-class" data-view="Header"></header>
 
 	<div id="main-container" class="myaccount-layout-container">
 
