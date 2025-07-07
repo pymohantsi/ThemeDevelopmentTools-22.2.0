@@ -270,12 +270,42 @@ div.home-infoblock-text {
     }
 }
 
+// home_connectivity_service_list_img_container
+div[data-cms-area="home_connectivity_service_list_img_container"]{
+  #cms{
+    div{
+      position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        width: 386px;
+        height: 360px;
+        background-color: #fff;
+        border-radius: 310px;
+        left: -46px;
+        top: 0;
+        padding: 0;
+      }
+      img{
+        width: 350px;
+        max-width: 350px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        z-index: 9;
+        position: relative;
+        border:0;
+      }
+    }
+  }
+}
+
 // connectivity-services
 
 .connectivity-services {
     background: url('https://beta.cticonnect.com/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/New Images/connectivity_BG.png') no-repeat center center;
     // background: linear-gradient(135deg, #0067a3, #bde6fb);
-    padding: 2rem 1rem;
+    padding: 3.75rem 3.18rem;
     border-radius: 1.5rem;
     overflow: hidden;
     margin-bottom: 60px;
@@ -294,7 +324,7 @@ div.home-infoblock-text {
     }
   
     .content-wrapper {
-      max-width: 1200px;
+      /*max-width: 1200px;*/
       margin: 0 auto;
       display: flex;
       flex-direction: row;
@@ -302,7 +332,10 @@ div.home-infoblock-text {
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-  
+      .cms-content{
+        padding-left: 0;
+        padding-right: 0;
+      }
       @media (max-width: 768px) {
         flex-direction: column;
         gap: 1.5rem;
@@ -356,7 +389,8 @@ div.home-infoblock-text {
             margin-bottom: 1rem;
             line-height: 20px;
             position: relative;
-  
+            padding-left: 30px;
+
             @media (max-width: $screen-md-max) {
               font-size: 12px;
               margin-bottom: 0.5rem;
@@ -370,7 +404,7 @@ div.home-infoblock-text {
             &:before {
               content: '';
               position: absolute;
-              left: -25px;
+              left: 0;
               top: 0;
               width: 20px;
               height: 20px;
