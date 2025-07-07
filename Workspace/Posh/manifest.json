@@ -12,6 +12,10 @@
     "description": "SC Posh is a custom theme that uses an elegant layout of images and text to showcase your health and beauty web store's assorted products. You can utilize the refined, understated color palette alongside bold images to create a high-end landing page that entices shoppers.",
     "override": [
         {
+            "src": "Overrides/Convergence/TopDealsExt/Modules/TopDealsExt/Sass/_topdealsext-topdealsext.scss",
+            "dst": "Convergence/TopDealsExt/Modules/TopDealsExt/Sass/_topdealsext-topdealsext.scss"
+        },
+        {
             "src": "Overrides/CXExtensibility/CoreContent/Modules/CMSMerchzoneCCT/Sass/_corecontent-cmsmerchzonecct.scss",
             "dst": "CXExtensibility/CoreContent/Modules/CMSMerchzoneCCT/Sass/_corecontent-cmsmerchzonecct.scss"
         }
@@ -700,7 +704,8 @@
             "Modules/Subscriptions/Sass/_subscriptions-list.scss",
             "Modules/Subscriptions/Sass/_subscriptions-pricing-view.scss",
             "Modules/Subscriptions/Sass/_subscriptions-status.scss",
-            "Overrides/CXExtensibility/CoreContent/Modules/CMSMerchzoneCCT/Sass/_corecontent-cmsmerchzonecct.scss"
+            "Overrides/CXExtensibility/CoreContent/Modules/CMSMerchzoneCCT/Sass/_corecontent-cmsmerchzonecct.scss",
+            "Overrides/Convergence/TopDealsExt/Modules/TopDealsExt/Sass/_topdealsext-topdealsext.scss"
         ]
     },
     "templates": {
