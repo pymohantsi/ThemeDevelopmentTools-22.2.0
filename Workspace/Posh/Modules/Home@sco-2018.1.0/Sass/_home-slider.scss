@@ -29,6 +29,9 @@
       .bx-viewport {
         height: 510px !important;
         border-radius: 0 20px 20px 20px;
+        @media (max-width: 992px) {
+          border-radius: inherit
+        }
       }
       .home-slide-main-container .home-slide-image-container {
         overflow: hidden;
@@ -189,29 +192,61 @@
       top: 50%;
       // width: 60px;
       // height: 60px;
-      width: $sc-target-size-mobile;
-      height: $sc-target-size-mobile;
+      width: 67px;
+      height: 67px;
       // font-size: 40px;
       font-size: 30px;
       text-align: center;
       // color: $sc-home-carousel-icons-color-desktop;
       color: $sc-color-12;
       border: 2px solid $sc-color-12;
-      margin-top: -20px;
       // line-height: 55px;
       line-height: 35px;
       z-index: 10;
       background: white;
       border-radius: 50%;
-      @media screen and (min-width:1500px) {
-        
-      }
+      transform: translateY(-50%);
       @media (max-width: $screen-sm-min) {
           display: $sc-home-carousel-icons-display;
           color: $sc-home-carousel-icons-color-mobile;
           margin-top: -38.5px;
           background: rgba(0,0,0,0.1);
           padding: 0 10px 5px;
+      }
+      @media (max-width: 991px) {
+        top: 100%;
+        transform: translateY(-100%);
+      }
+  }
+  .home-gallery-next-icon {
+    &::before {
+          content: '';
+          background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="19.55" height="39.043" viewBox="0 0 19.55 39.043"><path id="Path_881" data-name="Path 881" d="M0,0V.02l12.8,19.6L.056,39.044,19.55,19.549Z" transform="translate(0 0)" fill="%23989898"/></svg>');
+          background-repeat: no-repeat;
+          background-size: contain;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 20px;
+          height: 39px;
+          background-color: transparent;
+      }
+  }
+
+    .home-gallery-prev-icon {
+    &::before {
+          content: '';
+          background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="19.55" height="39.043" viewBox="0 0 19.55 39.043"><path id="Path_881" data-name="Path 881" d="M19.55,0V.02l-12.8,19.6L19.495,39.044,0,19.549Z" transform="translate(0 0)" fill="%23989898"/></svg>');
+          background-repeat: no-repeat;
+          background-size: contain;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 20px;
+          height: 39px;
+          background-color: transparent;
       }
   }
 
@@ -221,7 +256,7 @@
       left: 10px;
       @extend .icon-angle-left;
       @media screen and (min-width:1500px) {
-        left: -14px;
+        left: -35px;
       }
   }
 
@@ -230,7 +265,7 @@
       right: 10px;
       @extend .icon-angle-right;
       @media screen and (min-width:1500px) {
-        right: -14px;
+        right: -35px;
       }
   }
 

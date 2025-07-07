@@ -166,6 +166,9 @@ a.header-mini-cart-buttons {
     left: 27px;
 	font-family: $sc-font-family;
 	font-size: 0.75rem !important;
+	@media (min-width: 992px) and (max-width: 1080px) {
+    width: auto
+    }
 
 }
 .header-minicart-new{
