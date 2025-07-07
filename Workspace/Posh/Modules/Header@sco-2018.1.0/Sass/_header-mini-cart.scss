@@ -161,10 +161,12 @@ a.header-mini-cart-buttons {
     background: black;
     border-radius: 50%;
     color: white;
-    width: auto;
-    height: auto;
-    left: 25px;
+    width: 20px;
+    height: 20px;
+    left: 27px;
 	font-family: $sc-font-family;
+	font-size: 0.75rem !important;
+
 }
 .header-minicart-new{
 	display: flex;
