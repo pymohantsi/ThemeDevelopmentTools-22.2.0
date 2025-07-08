@@ -37,8 +37,27 @@
 
 //All placeholders equal
 @mixin placeholder {
-	&::-webkit-input-placeholder {@content}
-	&:-moz-placeholder           {@content}
-	&::-moz-placeholder          {@content}
-	&:-ms-input-placeholder      {@content}
+	&::-webkit-input-placeholder {
+		@content;
+	}
+	&:-moz-placeholder {
+		@content;
+	}
+	&::-moz-placeholder {
+		@content;
+	}
+	&:-ms-input-placeholder {
+		@content;
+	}
+	&::placeholder {
+		@content;
+	}
+}
+
+@mixin no-focus-outline {
+	&:focus,
+	&:focus-visible {
+		outline: none;
+		box-shadow: none;
+	}
 }

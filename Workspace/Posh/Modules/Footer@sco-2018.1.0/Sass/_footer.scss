@@ -344,8 +344,8 @@
          }
     }
     .newslettercct-form{
-        @media screen and (max-width: $screen-md-max) {
-          padding-top: 0;
+        @media screen and (max-width: $screen-sm-min) {
+          padding: 0;
         }
     }
     .newslettercct-header{
@@ -357,13 +357,13 @@
     .newslettercct-container{
         width: 61%;
         @media screen and (max-width:$screen-sm-min){
-            width: 95%;
+            width: 100%;
         }
         
     }
     .newslettercct-horizontal .newslettercct-input-group{
         @media (min-width: 768px) {
-            width: 50% ;
+            width: 63% ;
         display: inline-block;
         padding-right: 0;
         vertical-align: top;
@@ -424,7 +424,6 @@
     }
     .newslettercct-button-container{
         .newslettercct-submit{
-
             height: 50px;
             border-top-right-radius: 50px;
             border-bottom-right-radius:50px;

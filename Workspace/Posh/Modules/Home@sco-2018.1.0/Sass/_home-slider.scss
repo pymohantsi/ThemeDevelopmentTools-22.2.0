@@ -216,6 +216,8 @@
       @media (max-width: 991px) {
         top: 100%;
         transform: translateY(-100%);
+        width: 45px;
+        height: 45px;
       }
   }
   .home-gallery-next-icon {
@@ -231,7 +233,12 @@
           width: 20px;
           height: 39px;
           background-color: transparent;
+          @media (max-width: 991px) {
+            width: 15px;
+            height: 25px;
+          }
       }
+      
   }
 
     .home-gallery-prev-icon {
@@ -247,6 +254,10 @@
           width: 20px;
           height: 39px;
           background-color: transparent;
+          @media (max-width: 991px) {
+            width: 15px;
+            height: 25px;
+          }
       }
   }
 
@@ -364,7 +375,7 @@
           margin: auto;
           width: auto;
 
-          padding: $sc-padding-lv8 70px $sc-padding-lv8 70px;
+          padding: 85px 70px 40px 65px;
 
           &.left {
             text-align: left;

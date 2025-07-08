@@ -74,9 +74,10 @@ input[type="number"]
 {
 	@include appearance(none);
 	@include placeholder {
-		color: $sc-color-copy-light;
+		color: $sc-color-7;
 	}
 	@include border-radius(0);
+	@include no-focus-outline;
 }
 
 input[type="checkbox"],

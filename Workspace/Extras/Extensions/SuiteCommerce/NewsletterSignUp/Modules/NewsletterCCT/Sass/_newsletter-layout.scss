@@ -1,7 +1,8 @@
 .newslettercct-horizontal {
   @media (min-width: $screen-sm-min) {
     .newslettercct-input {
-      margin-right: $sc-margin-lv2;
+      // margin: $sc-margin-lv2;
+      margin: 0;
       width: 100%;
     }
 
@@ -13,7 +14,7 @@
     }
 
     .newslettercct-button-container {
-      display: inline;
+      display: inline-block;
     }
   }
 

@@ -95,15 +95,18 @@
   @extend .button-#{$newsletter-container-button};
   @extend .button-medium;
   border-radius: $sc-border-radius;
-  margin-bottom: $sc-margin-lv2;
-  margin-right: $sc-margin-lv2;
-  min-height: $sc-target-size;
+  // margin-bottom: $sc-margin-lv2;
+  // margin-right: $sc-margin-lv2;
+  // margin-bottom: $sc-margin-lv2;
+  margin-right: 0;
+  min-height: 0;
   vertical-align: bottom;
   padding: $sc-padding-lv2 $sc-padding-lv4;
 
   @media screen and (max-width: $screen-sm-min - 1px) {
     width: 100%;
     min-height: $sc-target-size-mobile;
+    padding: $sc-padding-lv2;
   }
 }
 
