@@ -285,6 +285,19 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
         left: -46px;
         top: 0;
         padding: 0;
+        @media screen and (max-width: 1200px) {
+          width: 336px;
+          height: 310px;
+        }
+        @media screen and (max-width: 991px) {
+          width: 310px;
+          height: 290px;
+          left: -25px;
+        }
+        @media screen and (max-width: 360px) {
+          width: 235px;
+          height: 235px;
+        }
       }
       img{
         width: 350px;
@@ -295,6 +308,18 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
         z-index: 9;
         position: relative;
         border:0;
+        @media screen and (max-width: 1200px) {
+          width: 300px;
+          max-width: 300px;
+        }
+        @media screen and (max-width: 991px) {
+          width: 288px;
+          max-width: 288px;
+        }
+        @media screen and (max-width: 360px) {
+          width: 230px;
+          max-width: 230px;
+        }
       }
     }
   }
@@ -303,32 +328,29 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
 // connectivity-services
 
 .connectivity-services {
-    background: url('https://beta.cticonnect.com/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/New Images/connectivity_BG.png') no-repeat center center;
-    // background: linear-gradient(135deg, #0067a3, #bde6fb);
+    background: url('https://beta.cticonnect.com/assets/our-services-bg.jpg') no-repeat center center;
     padding: 3.75rem 3.18rem;
     border-radius: 1.5rem;
     overflow: hidden;
-    margin-bottom: 60px;
-
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto 60px;
+    background-size: cover;
     @media screen and (max-width: $screen-sm-min) {
       background-size: cover;
-      
-        
     }
     @media screen and (max-width:992px){
       border-radius: 0;
     }
-    @media (min-width:992px) and (max-width:1400px) {
-      margin-left: $sc-margin-lv3;
-      margin-right: $sc-margin-lv3;
+    @media screen and (max-width:460px){
+      padding: 1rem;
     }
-  
     .content-wrapper {
       /*max-width: 1200px;*/
       margin: 0 auto;
       display: flex;
       flex-direction: row;
-      gap: 2rem;
+      gap: 3rem;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -350,13 +372,6 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
         font-weight: 700;
         color: #ffffff;
         margin-bottom: 0.5rem;
-        @media (min-width:$screen-sm-min) and (max-width: $screen-sm-max) {
-            font-size: 25px;
-        }
-
-        @media (max-width: $screen-sm-min) {
-            font-size: 23px;
-        }
       }
   
       h3 {
@@ -364,12 +379,6 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
         font-weight: 600;
         color: #ffffff;
         margin-bottom: 1rem;
-        @media (min-width:$screen-sm-min) and (max-width: $screen-sm-max) {
-            font-size: 25px;
-        }
-        @media (max-width: $screen-sm-min) {
-            font-size: 23px;
-        }
       }
   
       .services-list {
@@ -390,12 +399,6 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
             line-height: 20px;
             position: relative;
             padding-left: 30px;
-
-            @media (max-width: $screen-md-max) {
-              font-size: 12px;
-              margin-bottom: 0.5rem;
-            }
-    
             svg {
               width: 1.2rem;
               margin-right: 0.75rem;
@@ -411,10 +414,6 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
               background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='white' viewBox='0 0 24 24'><path d='M5 19L19 5M19 5H8M19 5V16' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
               background-repeat: no-repeat;
               background-size: contain;
-            }
-    
-            @media (max-width: 768px) {
-              font-size: 12px;
             }
           }
         }
@@ -494,9 +493,17 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
     grid-template-rows: auto auto auto;
     row-gap: 15px;
     column-gap: 40px;
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 0.2fr 1fr;
+      grid-template-rows: auto auto;
+    }
     .text-heading-conrtainer{
-        grid-column: 1;
-        grid-row: 1;
+      grid-column: 1;
+      grid-row: 1;
+      @media screen and (max-width: 420px) {
+         grid-column: 1 / span 2;
+         grid-row: 1;
+      }
     }
     h2 {
       font-size: 2rem;
@@ -518,6 +525,10 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
       width: 100%;
       display: flex;
       flex-direction: row;
+      @media screen and (max-width: 420px) {
+         grid-column: 1 / span 2;
+         grid-row: 2;
+      }
       button {
         padding: 0.94rem 1.5rem;
         border: none;
@@ -537,13 +548,23 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
   
     .categories-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       border-radius: 1rem;
       border: 2px solid #ddd;
       overflow: hidden;
       grid-column: 1 / -1;
       grid-row: 2;
-
+      @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+      }
+      @media screen and (max-width: 468px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+      @media screen and (max-width: 420px) {
+         grid-row: 3;
+      }
       .category {
         border: 2px solid #ddd;
         border-radius: 0;
@@ -594,6 +615,23 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
           svg {
             filter:invert(1) !important;
           }
+        }
+
+        @media screen and (max-width: 768px) {
+          &:nth-child(2n + 1) {
+            border-left: 0;
+          }
+          height: 200px;
+        }
+        @media screen and (max-width: 468px) {
+          border-bottom: 2px solid #ddd !important;
+          &:nth-child(2n + 2) {
+            border-left: 0;
+          }
+          &:last-child {
+            border-bottom: 0 !important;
+          }
+          height: 150px;
         }
       }
     }
