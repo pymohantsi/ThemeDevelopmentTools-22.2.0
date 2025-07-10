@@ -29,9 +29,22 @@
       .bx-viewport {
         height: 510px !important;
         border-radius: 0 20px 20px 20px;
-        @media (max-width: 992px) {
-          border-radius: inherit
+        @media (max-width: 1400px) {
+          height: 480px !important;
         }
+        @media (max-width: 1200px) {
+          height: 415px !important;
+        }
+        @media (max-width: 992px) {
+          border-radius: inherit;
+        }
+        @media (max-width: 767px) {
+          height: 530px !important;
+        }
+        @media (max-width: 520px) {
+          height: 460px !important;
+        }
+
       }
       .home-slide-main-container .home-slide-image-container {
         overflow: hidden;
@@ -209,8 +222,6 @@
       @media (max-width: $screen-sm-min) {
           display: $sc-home-carousel-icons-display;
           color: $sc-home-carousel-icons-color-mobile;
-          margin-top: -38.5px;
-          background: rgba(0,0,0,0.1);
           padding: 0 10px 5px;
       }
       @media (max-width: 991px) {

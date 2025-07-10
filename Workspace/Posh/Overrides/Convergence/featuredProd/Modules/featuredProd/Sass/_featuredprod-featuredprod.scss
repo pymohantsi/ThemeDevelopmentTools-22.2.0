@@ -1,6 +1,8 @@
 .featured-products {
 	padding: 2rem;
-  
+	@media screen and (max-width: 480px ) {
+		padding: 1.5rem;
+	  }
 	.section-header {
 	  display: flex;
 	  @media screen and (max-width: 768px) {
@@ -9,6 +11,7 @@
 	  }
 	  @media screen and (max-width: 480px ) {
 		flex-direction: column;
+		padding: 1.5rem;
 	  }
 
 	  align-items: center;
@@ -178,13 +181,13 @@
 		  transition: box-shadow 0.5s ease, border 0.5s ease;
 		  @media (min-width: 600px) and (max-width: 767px) {
 			min-width: 265px;
-			max-width: 250px;
+			width: 100%;;
 		 
 			
 		}
 		@media (min-width:768px) and (max-width: 992px) {
 		  min-width: 350px;
-		  max-width: 320px;
+		  width: 100%;
 			
 		}
   
@@ -275,7 +278,7 @@
 		grid-template-columns: repeat(2, 1fr);
   
 		.promo-box {
-		  grid-column: span 2; // full width on medium
+		  grid-column: span 1; // full width on medium
 		}
 	  }
 	}

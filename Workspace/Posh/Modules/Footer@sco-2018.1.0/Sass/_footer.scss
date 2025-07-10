@@ -404,6 +404,12 @@
     .fields-group-form-control{
         // width: 580px;
     }
+    #email-error{
+        background: inherit;
+        border: inherit;
+        color: #ed8282;
+        width: 130%;
+    }
     .newslettercct-input{
         height: 50px;
         border-radius: 50px;
@@ -436,6 +442,8 @@
             background-color: $sc-color-sky-blue;
             border-color: $sc-color-sky-blue;
             text-transform: capitalize;
+            float: left;
+            width: 100%;
             @media screen and (max-width: 768px) {
                 font-size: 11px;
 
