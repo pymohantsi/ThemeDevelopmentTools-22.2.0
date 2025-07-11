@@ -442,12 +442,10 @@
             background-color: $sc-color-sky-blue;
             border-color: $sc-color-sky-blue;
             text-transform: capitalize;
-            float: left;
-            width: 100%;
             @media screen and (max-width: 768px) {
                 font-size: 11px;
-
-                
+                float: left;
+                width: 100%;
             }
         }
     }
