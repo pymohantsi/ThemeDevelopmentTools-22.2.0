@@ -256,16 +256,24 @@ div.home-infoblock-text {
         }
     }
 }
-.home-our-approach-container{
-    margin-bottom: calc($sc-margin-lv2 * 2);
+div.home-our-approach-container{
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto 60px;
+    .cms-content{
+            padding: 0;
+          }
     .home-our-approach-sub-container{
-        margin-left: 0;
-        margin-right: 0;
+      display: flex;
+      align-items: center;
+      margin: 0;
         .home-approach-sm-8-container{
-            margin-top: calc($sc-margin-lv2 * 2);
+            margin:  0 auto;
+            padding-left: 50px;
         }
         .home-approach-sm-4-container{
            text-align: center;
+           padding: 0;
         }
     }
 }

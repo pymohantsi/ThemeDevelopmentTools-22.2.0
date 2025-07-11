@@ -37,6 +37,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
     height: 423px;
+    margin: 20px 0;
     margin: calc($sc-margin-lv2 * 2) 0;
 
     h4 {
@@ -134,7 +135,7 @@
       // height: 420px;
       border: 2px solid #cbcbcb;
       border-radius: 20px;
-      padding: 20px;
+      padding: 15px;
       padding: calc($sc-padding-lv2 * 2);
       box-sizing: border-box;
       transition: box-shadow 0.5s ease, border 0.5s ease;
