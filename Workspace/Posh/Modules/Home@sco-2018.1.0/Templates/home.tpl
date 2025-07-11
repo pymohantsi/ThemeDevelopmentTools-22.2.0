@@ -544,27 +544,11 @@
 <div class="sections-container">
   <section class="why-choose-us">
 	<div class="why-choose-us-main-content">
-
-    {{!-- <h2>Why Choose Us?</h2>
-	<ul>
-		<li>
-			Industry Experts with Years of Experience
-		</li>
-		<li>
-			Fast & Reliable Service
-		</li>
-		<li>
-			End-to-End Support for Seamless Integration
-		</li>
-	</ul> --}}
-	<div data-cms-area="home_cms_area_why_choose_us_main_text" data-cms-area-filters="path"></div>
-
-	<div class="why-choose-us-shopnow-btn">
-
-    <a data-touchpoint="home" data-hashtag="#/shop-by-category" class="contact-btn" >
-      <div data-cms-area="home_cms_area_why_choose_us_btn" data-cms-area-filters="path"></div>
-      <svg xmlns="http://www.w3.org/2000/svg" class="btn-right-arrow" width="16.295" height="15.938" viewBox="0 0 16.295 15.938"><path id="button-arrow" d="M6.555,0V13.881m0,0,6.555-6.555M6.555,13.881,0,7.326" transform="translate(1 14.524) rotate(-90)" fill="none" stroke="#00548C" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a>
-  
+	<div class="why-choose-us-text-container">
+	  <div data-cms-area="home_cms_area_why_choose_us_main_text" data-cms-area-filters="path"></div>
+	  <div class="why-choose-us-shopnow-btn">
+	    <a data-touchpoint="home" data-hashtag="#/shop-by-category" class="contact-btn" ><div data-cms-area="home_cms_area_why_choose_us_btn" data-cms-area-filters="path"></div><svg xmlns="http://www.w3.org/2000/svg" class="btn-right-arrow" width="16.295" height="15.938" viewBox="0 0 16.295 15.938"><path id="button-arrow" d="M6.555,0V13.881m0,0,6.555-6.555M6.555,13.881,0,7.326" transform="translate(1 14.524) rotate(-90)" fill="none" stroke="#00548C" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a>
+	  </div>
 	</div>
 	
 	</div>

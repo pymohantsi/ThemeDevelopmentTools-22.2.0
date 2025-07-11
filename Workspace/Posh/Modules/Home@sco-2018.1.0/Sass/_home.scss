@@ -234,13 +234,18 @@ div.home-infoblock-text {
         border-radius: 9999px;
         padding: 10px 20px;
         font-size: 16px;
-        font-weight: lighter;
+        font-weight: 600;
         display: inline-flex;
         align-items: center;
-        gap: 10px;
+        gap: 21px;
         transition: transform 0.3s ease;
         text-transform:none;
         margin-bottom: calc($sc-margin-lv2 * 2);
+        max-width: 194px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        min-height: 50px;
 
         .btn-right-arrow {
             transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -260,20 +265,64 @@ div.home-our-approach-container{
     max-width: 1380px;
     width: 100%;
     margin: 0 auto 60px;
+    @media screen and (max-width: 1380px) {
+      padding: 0 2rem;
+    }
     .cms-content{
-            padding: 0;
-          }
+      padding: 0;
+    }
     .home-our-approach-sub-container{
       display: flex;
-      align-items: center;
+      align-items: stretch;
       margin: 0;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
         .home-approach-sm-8-container{
             margin:  0 auto;
             padding-left: 50px;
+            display: flex;
+            align-items: center;
+          @media screen and (max-width: 768px) {
+            width: 100% !important;
+            padding: 0;
+            margin-top: 30px !important;
+          }
         }
         .home-approach-sm-4-container{
            text-align: center;
            padding: 0;
+           @media screen and (max-width: 768px) {
+            width: 100% !important;
+          }
+           div{
+            height: 100%;
+           }
+           .cms-content-CMS_IMAGE{
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            &::after{
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              background: #00568e;
+              opacity: 0.34;
+              top: 0;
+              left: 0;
+              z-index: 1;
+            }
+            img{
+              display: block;
+              height: 100%;
+              object-fit: cover;
+              @media screen and (max-width: 768px) {
+                height: 300px;
+                width: 100%;
+              }
+            }
+           }
         }
     }
 }
@@ -664,34 +713,30 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
   
   .why-choose-us {
     flex: 1;
-    padding: 2rem;
+    padding: 2rem 5.68rem 2rem 2rem;
     background-color: #E8F7FF;
     border-radius: 0 20px 20px 0;
     text-align: left;
     @media screen and (max-width:768px){
       border-radius: 20px;
       margin: 15px;
+      padding: 2rem;
     }
     .why-choose-us-main-content{
       text-align: left;
-      @media screen and (min-width:2028px) {
-        margin-left: 330px;
+      display: flex;
+      justify-content: flex-end;
+      @media screen and (max-width:768px){
+        justify-content: flex-start;
       }
-      @media (min-width:1900px) and (max-width:2028px) {
-        margin-left: 283px;
+      div[data-cms-area="home_cms_area_why_choose_us_main_text"]{
+        display: flex;
+        flex-direction: column;
+        .why-choose-us-shopnow-btn{
+          order:2;
+        }
       }
-      @media (min-width:1688px) and (max-width:1900px) {
-        margin-left: 173px;
-      }
-      @media (min-width:1560px) and (max-width:1688px) {
-        margin-left: 110px;
-      }
-      @media (min-width:1200px) and (max-width:1560px) {
-        margin-left: 29px;
-      }
-      @media screen and (max-width:1200px) {
-        margin-left: 15px;
-      }
+      .cms-content{padding: 0;}
     }
     h2 {
       font-size: 34px;
@@ -712,6 +757,7 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
     ul{
       list-style: none;
       padding: 0;
+      margin-left: 0;
       margin-bottom: 1.5rem;
       @media screen and (max-width:$screen-sm-min) {
         margin-left: 0;
@@ -723,12 +769,20 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
         margin-bottom: 1rem;
         display: flex;
         align-items: center;
+        padding-left: 25px;
+        position: relative;
 
         &::before{
-          content:'✔';
-          color: #0093D1;
+          content:'';
           margin-right: 0.5rem;
-          font-size: 18px;
+          background-image: url('https://beta.cticonnect.com/assets/checked.png');
+          width: 18px;
+          height: 13px;
+          position: absolute;
+          left: 0;
+          top: 6px;
+          background-size: contain;
+          background-repeat: no-repeat;
         }
         @media screen and (max-width:768px){
           font-size: 14px;
@@ -756,8 +810,14 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
       text-decoration: none;
       transition: transform 0.3s ease;
       font-size: 16px;
-      gap: 10px;
-      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1607843137);
+      gap: 20px;
+      max-width: 194px;
+      width: 100%;
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: capitalize;
       .btn-right-arrow {
         transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       }
@@ -790,19 +850,9 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
       border-right: 3px solid #00548A;
     }
     .need-assistance-main-content{
-      @media screen  and (min-width:2172px){
-        margin-right: 450px;
-      }
-      @media (min-width:1775px)  and (max-width:2172px){
-        margin-right: 285px;
-      }
-      @media (min-width:1388px)  and (max-width:1775px){
-        margin-right: 120px;
-      }
-      @media screen and (max-width:1388px){
-        margin-right: 15px;
-        
-      }
+      max-width: 700px;
+      width: 100%;
+      .cms-content{padding: 0;}
     }
     
     h2 {
@@ -845,10 +895,13 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
     
     .contact-info {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
+      gap: 7.31rem;
+      @media screen and (max-width:1252px){
+        gap: 1rem;
+      }
       @media screen and (max-width:1055px){
         flex-direction: column;
-        
       }
       .contact-item {
         display: flex;
@@ -858,6 +911,9 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
         font-size: 18px;
         font-weight: 600;
         color: #000000;
+        .cms-content{
+          padding: 0;
+        }
         @media screen and (max-width:768px){
           font-size: 14px;
           
