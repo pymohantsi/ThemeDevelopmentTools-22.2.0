@@ -1,7 +1,10 @@
-.featured-products {
-	padding: 2rem;
+.featured-Product-custom-container{
+  margin-left: 20px;
+  margin-right: 20px;
+  .featured-products {
+	padding: 2.5rem 0;
 	@media screen and (max-width: 480px ) {
-		padding: 1.5rem;
+		padding: 1.5rem 0;
 	  }
 	.section-header {
 	  display: flex;
@@ -52,9 +55,11 @@
 	.product-grid {
 	  display: grid;
 	  grid-template-columns: repeat(4, 1fr); // desktop default
-	  grid-gap: 1.5rem;
+	  gap: 35px;
 	  margin-top: 2rem;
-  
+	  @media (max-width: 1440px) {
+		gap: 20px;
+	  }
 	  .promo-box {
 		grid-column: span 2;
 		background: transparent linear-gradient(55deg, #00548C 0%, #0093D1 14%, #CAEAF8 57%, #EBF9FF 100%) 0% 0% no-repeat padding-box;
@@ -75,8 +80,8 @@
 		img {
 		  max-width: 100%;
 		  margin-bottom: 1rem;
-		  @media screen and (max-width: 768px) {
-			width: 35%;
+		  @media screen and (max-width: 767px) {
+			width: 20%;
 		  }
 		  @media screen and (max-width: 500px) {
 			width: 30% !important;
@@ -177,16 +182,13 @@
 		  padding: calc($sc-padding-lv2 * 2);
 		  box-sizing: border-box;
 		  transition: box-shadow 0.5s ease, border 0.5s ease;
-		  @media (min-width: 600px) and (max-width: 767px) {
-			min-width: 265px;
-			width: 100%;;
-		 
-			
+		  min-height: 420px;
+		  @media (max-width: 992px) {
+			max-width: 350px;
+			width: 100%;
 		}
-		@media (min-width:768px) and (max-width: 992px) {
-		  min-width: 350px;
-		  width: 100%;
-			
+		@media (max-width: 535px) {
+			max-width: 100%;
 		}
   
 		&:hover {
@@ -278,6 +280,16 @@
 	}
 	@media (max-width: 992px) {
 	  .product-grid {
+		grid-template-columns: repeat(3, 1fr);
+  
+		.promo-box {
+		  grid-column: span 3; // full width on medium
+		}
+	  }
+	}
+
+	@media (max-width: 767px) {
+	  .product-grid {
 		grid-template-columns: repeat(2, 1fr);
   
 		.promo-box {
@@ -286,14 +298,16 @@
 	  }
 	}
   
-	@media (max-width: 600px) {
+	@media (max-width: 535px) {
 	  .product-grid {
-		grid-template-columns: 1fr !important;
+		grid-template-columns: repeat(1, 1fr);
   
 		.promo-box {
-		  grid-column: span 1 !important;
+		  grid-column: span 1; // full width on medium
 		}
 	  }
 	}
   }
+}
+
   

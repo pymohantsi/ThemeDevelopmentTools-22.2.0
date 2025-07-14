@@ -742,7 +742,6 @@
 }
 .header-section{
 	padding: 0px 20px 0 20px;
-	border-bottom: 1px solid #d9d9d9;
 	@media (max-width: 992px) {
 		border-bottom: none;
 	}
@@ -784,7 +783,4 @@
 		font-size: 11px !important;
 		
 	}
-}
-.header-custom-class{
-	border-bottom: 2px solid #D9D9D9;
 }

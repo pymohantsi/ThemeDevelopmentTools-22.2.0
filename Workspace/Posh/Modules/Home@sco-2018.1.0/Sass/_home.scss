@@ -262,11 +262,10 @@ div.home-infoblock-text {
     }
 }
 div.home-our-approach-container{
-    max-width: 1380px;
     width: 100%;
-    margin: 0 auto 60px;
-    @media screen and (max-width: 1380px) {
-      padding: 0 2rem;
+    margin: 0 auto 45px;
+    @media screen and (max-width: 1440px) {
+      padding: 0 20px;
     }
     @media screen and (max-width: 768px) {
       margin: 0 auto;
@@ -392,10 +391,12 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
     padding: 3.75rem 3.18rem;
     border-radius: 1.5rem;
     overflow: hidden;
-    max-width: 1380px;
     width: 100%;
-    margin: 0 auto 60px;
+    margin: 0 auto 4.9rem;
     background-size: cover;
+    @media screen and (max-width: 1440px) {
+      border-radius: 0;
+    }
     @media screen and (max-width: $screen-sm-min) {
       background-size: cover;
     }
@@ -521,8 +522,6 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
 
       @media screen and (max-width: $screen-sm-min) {
         flex: 0 0 200px;
-       
-        
       }
   
       img {
@@ -546,13 +545,17 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
 
 //   Shop by container
 .shop-by {
-    padding: 2rem;
+    padding: 2.5rem 0 3rem;
     font-family: $sc-font-family;
     display: grid;
     grid-template-columns: 0.13fr 0.5fr 1fr;
     grid-template-rows: auto auto auto;
     row-gap: 15px;
     column-gap: 40px;
+    @media screen and (max-width: 1440px) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
     @media screen and (max-width: 768px) {
       grid-template-columns: 0.2fr 1fr;
       grid-template-rows: auto auto;
@@ -628,7 +631,7 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
       .category {
         border: 2px solid #ddd;
         border-radius: 0;
-        padding: 1rem;
+        padding: 2rem;
         text-align: center;
         transition: background 0.3s;
         display: flex;
@@ -644,7 +647,6 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
         border-top: 0;
         border-right: 0;
         svg {
-          height: 50px;
           margin-bottom: 0.8rem;
         }
   
@@ -700,17 +702,23 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
   .home-top-deals-container{
     margin-top: calc($sc-margin-lv2 * 2);
     margin-bottom: calc($sc-margin-lv2 * 2);
+    @media (max-width: 1440px) {
+      margin-left: 20px;
+      margin-right: 0;
+    }
   }
 
 
 
   .sections-container {
-    display: flex;
+    display: grid;
     gap: 2rem;
-    margin: 2rem 0;
+    margin: 2rem 0 4.6rem;
+    grid-template-columns: 0.76fr 1fr;
     
     @media (max-width: 768px) {
       flex-direction: column;
+      grid-template-columns: repeat(1, 1fr);
     }
   }
   
