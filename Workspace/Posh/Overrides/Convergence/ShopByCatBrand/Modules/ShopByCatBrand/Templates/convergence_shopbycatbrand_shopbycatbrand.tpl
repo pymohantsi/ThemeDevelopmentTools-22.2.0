@@ -15,7 +15,7 @@
     <button 
         data-action="ToggleBrands"  
         {{#if isSelected}} class="active" {{/if}} 
-        data-categoriesinitid="{{CategoriesinitID}}"  
+        data-categoriesinitid="{{CategoriesinitID}}" 
         data-categoryid="{{categoryID}}"  
     >
         {{startWith}}
