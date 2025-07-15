@@ -718,6 +718,9 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
       margin-left: 20px;
       margin-right: 0;
     }
+    @media (max-width: 768px) {
+      margin-right: 20px;
+    }
   }
 
 

@@ -764,11 +764,8 @@
 	}
 }
 .header-profile-wrapper,.header-wishlist-wrapper{
-	display: none;
+	display: block;
 	margin-right: 20px;
-	@media (min-width: $screen-sm-min) {
-		display: block;
-	}
 	@media (max-width: $screen-sm-min) {
 		margin-right: $sc-margin-lv2;
 	}

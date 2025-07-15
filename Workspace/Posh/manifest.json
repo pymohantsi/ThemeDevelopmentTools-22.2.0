@@ -16,12 +16,20 @@
             "dst": "Convergence/featuredProd/Modules/featuredProd/Sass/_featuredprod-featuredprod.scss"
         },
         {
+            "src": "Overrides/Convergence/ShopByCatBrand/Modules/ShopByCatBrand/Templates/convergence_shopbycatbrand_shopbycatbrand.tpl",
+            "dst": "Convergence/ShopByCatBrand/Modules/ShopByCatBrand/Templates/convergence_shopbycatbrand_shopbycatbrand.tpl"
+        },
+        {
             "src": "Overrides/Convergence/TopDealsExt/Modules/TopDealsExt/Sass/_topdealsext-topdealsext.scss",
             "dst": "Convergence/TopDealsExt/Modules/TopDealsExt/Sass/_topdealsext-topdealsext.scss"
         },
         {
             "src": "Overrides/CXExtensibility/CoreContent/Modules/CMSMerchzoneCCT/Sass/_corecontent-cmsmerchzonecct.scss",
             "dst": "CXExtensibility/CoreContent/Modules/CMSMerchzoneCCT/Sass/_corecontent-cmsmerchzonecct.scss"
+        },
+        {
+            "src": "Overrides/NsEcom/MenuTabletFix/Modules/Main/Sass/_menu-tablet-fix.scss",
+            "dst": "NsEcom/MenuTabletFix/Modules/Main/Sass/_menu-tablet-fix.scss"
         }
     ],
     "skins": [
@@ -710,7 +718,8 @@
             "Modules/Subscriptions/Sass/_subscriptions-status.scss",
             "Overrides/CXExtensibility/CoreContent/Modules/CMSMerchzoneCCT/Sass/_corecontent-cmsmerchzonecct.scss",
             "Overrides/Convergence/TopDealsExt/Modules/TopDealsExt/Sass/_topdealsext-topdealsext.scss",
-            "Overrides/Convergence/featuredProd/Modules/featuredProd/Sass/_featuredprod-featuredprod.scss"
+            "Overrides/Convergence/featuredProd/Modules/featuredProd/Sass/_featuredprod-featuredprod.scss",
+            "Overrides/NsEcom/MenuTabletFix/Modules/Main/Sass/_menu-tablet-fix.scss"
         ]
     },
     "templates": {
@@ -993,7 +1002,8 @@
                     "Modules/Subscriptions/Templates/subscriptions_status.tpl",
                     "Modules/Transaction.Line.Views@sco-2018.1.0/Templates/transaction_line_views_cell_selectable_actionable_navigable.tpl",
                     "Modules/Transaction.Line.Views@sco-2018.1.0/Templates/transaction_line_views_quantity_amount.tpl",
-                    "Modules/TransactionHistory@sco-2018.1.0/Templates/transaction_history_list.tpl"
+                    "Modules/TransactionHistory@sco-2018.1.0/Templates/transaction_history_list.tpl",
+                    "Overrides/Convergence/ShopByCatBrand/Modules/ShopByCatBrand/Templates/convergence_shopbycatbrand_shopbycatbrand.tpl"
                 ]
             },
             "myaccount": {
@@ -1319,7 +1329,8 @@
                     "Modules/RecentlyViewedItems@sco-2018.1.0/Templates/recently_viewed_cell.tpl",
                     "Modules/RecentlyViewedItems@sco-2018.1.0/Templates/recently_viewed_items.tpl",
                     "Modules/RecentlyViewedItems@sco-2018.1.0/Templates/recently_viewed_row.tpl",
-                    "Modules/ShoppingApplication@sco-2018.1.0/Templates/shopping_layout.tpl"
+                    "Modules/ShoppingApplication@sco-2018.1.0/Templates/shopping_layout.tpl",
+                    "Overrides/Convergence/ShopByCatBrand/Modules/ShopByCatBrand/Templates/convergence_shopbycatbrand_shopbycatbrand.tpl"
                 ]
             },
             "checkout": {
@@ -1689,7 +1700,8 @@
                     "Modules/Subscriptions/Templates/subscriptions_status.tpl",
                     "Modules/Transaction.Line.Views@sco-2018.1.0/Templates/transaction_line_views_cell_selectable_actionable_navigable.tpl",
                     "Modules/Transaction.Line.Views@sco-2018.1.0/Templates/transaction_line_views_quantity_amount.tpl",
-                    "Modules/TransactionHistory@sco-2018.1.0/Templates/transaction_history_list.tpl"
+                    "Modules/TransactionHistory@sco-2018.1.0/Templates/transaction_history_list.tpl",
+                    "Overrides/Convergence/ShopByCatBrand/Modules/ShopByCatBrand/Templates/convergence_shopbycatbrand_shopbycatbrand.tpl"
                 ]
             }
         }

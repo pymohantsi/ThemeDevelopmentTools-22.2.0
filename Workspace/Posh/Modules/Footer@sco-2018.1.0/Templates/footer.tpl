@@ -91,8 +91,8 @@
 					<span class="footer-extra-info">{{#if ../extraFooterView.text}}{{{../extraFooterView.text}}}{{/if}}</span>
 				</div>
 				<div id="fotter-social-icon" class="social-icon" data-cms-area="header_top_social_icon" data-cms-area-filters="global"></div>
+				<div id="footer-payment-card" class="footer-payment-card" data-cms-area="footer_payment_card" data-cms-area-filters="global"></div>
 			</div>
-			<div id="footer-payment-card" class="footer-payment-card" data-cms-area="footer_payment_card" data-cms-area-filters="global"></div>
         </div>
     </section>
     {{/unless}}
