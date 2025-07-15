@@ -649,6 +649,10 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
         svg {
           margin-bottom: 0.8rem;
         }
+        img{
+          height: 100%;
+          object-fit: contain
+        }
   
         span {
           font-weight: 600;
