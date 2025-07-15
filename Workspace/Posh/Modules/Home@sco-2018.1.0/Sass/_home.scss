@@ -427,7 +427,9 @@ div[data-cms-area="home_connectivity_service_list_img_container"]{
   
     .text-section {
       flex: 1;
-  
+      @media screen and (max-width: 768px) {
+        margin-bottom: 2rem;
+      }  
       h2 {
         font-size: 34px;
         font-weight: 700;
