@@ -7,10 +7,13 @@
 .footer-content-wrapper {
     @extend .container;
     @include site-max-width-container;
-    padding: 40px 20px;
+    padding: 40px 15px 40px 0px;
     color: $sc-footer-text-color;
     display: flex;
     flex-direction: column;
+    @media (max-width: 1440px) {
+        padding: 40px 20px;
+    }
 }
 
 .footer-content {
@@ -207,7 +210,10 @@
     flex-wrap: wrap;
     font-size: $sc-font-size-s;
     font-weight: $sc-font-weight-light;
-    padding: 45px 20px 35px 20px;
+    padding: 45px 20px 35px 0px;
+    @media (max-width: 1440px) {
+        padding-left: 20px;
+    }
     @media (max-width: $screen-xs) {
         gap: 30px;
         padding: 20px;

@@ -8,7 +8,7 @@
                     <ul class="site-search-content-Categories-list">
                         <li><a class="site-search-content-Categories-list-item" data-type="search-category" data-value="all" href="#">
                             <span>All Categories</span>
-                            <span><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
                         </a></li>
                     </ul>
                 </div>
