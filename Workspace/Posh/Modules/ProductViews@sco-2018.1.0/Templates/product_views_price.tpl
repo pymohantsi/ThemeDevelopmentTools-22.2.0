@@ -12,11 +12,11 @@
 						{{comparePriceFormatted}}
 					</small>
 				{{/if}}
-				{{#if tariff}}
 				<div class="tariff-container">
+				{{#if tariff}}
 					+ {{tariff}} Tariff
-				</div>
 				{{/if}}
+				</div>
 				<link itemprop="availability" href="{{#if isPurchasable}}{{#if isInStock}}https://schema.org/InStock{{else}}{{#if backOrderPreOrder}}https://schema.org/PreOrder{{else}}https://schema.org/InStock{{/if}}{{/if}}{{else}}https://schema.org/OutOfStock{{/if}}"/>
 			</span>
 
@@ -32,11 +32,11 @@
 						{{comparePriceFormatted}}
 					</small>
 				{{/if}}
-				{{#if tariff}}
 				<div class="tariff-container">
+				{{#if tariff}}
 					+ {{tariff}} Tariff
-				</div>
 				{{/if}}
+				</div>
 				<link itemprop="availability" href="{{#if isPurchasable}}{{#if isInStock}}https://schema.org/InStock{{else}}{{#if backOrderPreOrder}}https://schema.org/PreOrder{{else}}https://schema.org/InStock{{/if}}{{/if}}{{else}}https://schema.org/OutOfStock{{/if}}"/>
 			</span>
 		{{/if}}
