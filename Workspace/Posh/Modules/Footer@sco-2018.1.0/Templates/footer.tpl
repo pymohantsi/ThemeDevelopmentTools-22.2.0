@@ -69,6 +69,22 @@
 						</ul>
 					</div>
 	            {{/if}}
+				{{#if extraFooterView.col4Links}}
+					<div class="footer-content-nav-list-4">
+						{{#each extraFooterView.col4Links}}
+							{{#unless href}}
+								<div class="footer-column-heading-listitem"><h4 class="footer-column-heading">{{text}}</h4></div>
+							{{/unless}}
+						{{/each}}
+						<ul class="footer-column-nav">
+							{{#each extraFooterView.col4Links}}
+								{{#if href}}
+									<li class="footer-column-link-listitem"><a class="footer-column-link" {{objectToAtrributes item}} data-hashtag="{{datahashtag}}" data-touchpoint="{{datatouchpoint}}" data-target="{{datatarget}}" {{#if datatarget includeZero=true}}target="_blank"{{/if}}>{{text}}</a></li>
+								{{/if}}
+							{{/each}}
+						</ul>
+					</div>
+	            {{/if}}
 			</div>
 		</div>
 	</div>
