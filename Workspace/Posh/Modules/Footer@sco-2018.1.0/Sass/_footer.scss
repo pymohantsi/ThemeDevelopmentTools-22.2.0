@@ -68,12 +68,10 @@
 .footer-column-heading-listitem{
 
     margin-bottom: 22px;
-    
     .footer-column-heading{
 
         @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
-           font-size: 20px;
-            
+            font-size: 20px;
         }
         @media  screen and (min-width:$screen-md-max) {
             font-size: 26px;
@@ -86,7 +84,6 @@
         }
 
     }
-    
 }
 
 .footer-column-heading {
@@ -112,8 +109,7 @@
     @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
         font-size: 14px;
         font-weight: normal;
-         
-     }
+    }
      @media  screen and (min-width:$screen-md-max) {
          font-size: 16px;
          font-weight: normal;

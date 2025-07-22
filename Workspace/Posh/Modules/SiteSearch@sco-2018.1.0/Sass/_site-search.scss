@@ -109,8 +109,6 @@
   .site-search-content-input{
     @media (min-width: $screen-md-min) and (max-width: $screen-lg-min) {
       width: 65%;
-     
-      
     }
   }
   .site-search-list-container {
@@ -131,9 +129,7 @@
       @media (min-width: $screen-md-min) and (max-width: $screen-lg-min) {
         width: 130px;
         font-size: 12px;
-        
       }
-      
     }
   }
 }
