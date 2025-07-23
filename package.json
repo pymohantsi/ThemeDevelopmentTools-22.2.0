@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "node gulp/spec",
-        "local": "gulp theme:local",
+        "start": "gulp theme:local",
         "fetch": "gulp theme:fetch",
         "deploy": "gulp theme:deploy",
         "postinstall": "npm i -g gulp-cli"

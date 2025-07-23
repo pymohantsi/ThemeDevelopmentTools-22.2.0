@@ -1,0 +1,35 @@
+{
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/ns_npm_repository": true,
+    "**/ns_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "payload.json": true,
+    "coverage": true,
+    "**/LocalDistribution": true,
+    "**/DeployDistribution": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/ns_npm_repository": true,
+    "**/ns_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "payload.json": true,
+    "coverage": true,
+    "**/LocalDistribution": true,
+    "**/DeployDistribution": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules": true,
+    "**/ns_npm_repository": true,
+    "**/ns_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "payload.json": true,
+    "coverage": true,
+    "**/LocalDistribution": true,
+    "**/DeployDistribution": true
+  }
+}
