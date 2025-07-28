@@ -69,5 +69,10 @@
         .header-menu-level3 {
             z-index: 2;
         }
+        .header-menu-level2{
+          a, .header-menu-level2-anchor{
+            padding-right: 0 !important;
+          }   
+        }
     }
 }
